@@ -1,0 +1,1 @@
+# opencode-trace-plugin
