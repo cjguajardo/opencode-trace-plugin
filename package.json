@@ -1,0 +1,31 @@
+{
+  "name": "opencode-trace-plugin",
+  "version": "1.0.0",
+  "description": "Agent observability plugin for OpenCode — local SQLite + remote API export",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.14.20",
+    "@opencode-ai/sdk": "^1.14.20",
+    "better-sqlite3": "^11.7.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
